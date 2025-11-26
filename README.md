@@ -16,7 +16,7 @@ markdown    → [Run the historic 944k-step notebook yourself](turbulence_128_ph
 - Built as a mobile-optimized spectral core accelerator.
 - Uses pseudospectral methods for Navier-Stokes equations.
 - Zero dependencies outside stock PyTorch/NumPy—runs in Termux on Android.
-- Full Jupyter notebook included: `turbulence_simulation.ipynb` (run it yourself!).
+- Full Jupyter notebook included: `turbulence_128_phone.ipynb` (run it yourself!).
 
 ## Setup & Run
 1. Install Termux on Android.
