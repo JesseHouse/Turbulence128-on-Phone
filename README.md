@@ -1,24 +1,24 @@
 # Turbulence128-on-Phone
 
-**First-ever real-time 128³ 3D pseudospectral turbulence simulation running natively on an Android phone**  
-Pure Python + NumPy + PyTorch · zero external libs · ~1 FPS on Snapdragon 8 Gen 2
+**World-first real-time 128³ 3D pseudospectral turbulence simulation running natively on an Android phone**  
+- Pure Python + NumPy + PyTorch  
+- Zero external libraries, no CUDA, no GPU  
+- ~1.17 FPS on Snapdragon 8 Gen 2 (stock cooling)
 
-![image](https://github.com/user-attachments/assets/afea9b47-a7a9-4687-961b-d65eb6296cfa)
+### Full notebook (complete code + live outputs + interactive plots)
+[T128-on-Phone.ipynb](T128-on-Phone.ipynb)  
+Click the green **Open in Colab** button at the top of the notebook to run it instantly in your browser – no install required.
 
-Live notebook with full code + outputs (just click the green button):  
-[T128-on-Phone.ipynb](T128-on-Phone.ipynb) → **Open in Colab** button at the top
+### Real phone run – 400 steps @ 1.17 FPS
+![400 steps @ 1.17 FPS on phone](https://github.com/JesseHouse/Turbulence128-on-Phone/raw/main/phone_run_400_steps_1.17fps.jpg)  
+*(upload your screenshot and name it exactly `phone_run_400_steps_1.17fps.jpg` or change the filename above)*
 
-### What you’re looking at
-- Grid: 128×128×128 (2,097,152 voxels)
-- Full 3D incompressible Navier-Stokes via pseudospectral method
-- Dealiasing, FFT convolutions, RK4 integration — all on CPU
-- Interactive isosurface + vorticity visualization
-
-### Run it on your phone (Termux)
+### Run it yourself on Android (Termux)
 ```bash
-pkg install python numpy pytorch torchvision
+pkg update
+pkg install python python-numpy pytorch ffmpeg libjpeg-turbo -y
 git clone https://github.com/JesseHouse/Turbulence128-on-Phone
 cd Turbulence128-on-Phone
-python turbulence_128_phone.py   # or open the notebook in Jupyter
+python turbulence_128_phone.py
 
- Proof it’s real - 400+ steps in the notebook: energy decay, FPS prints, live plots   - No GPU, no CUDA, no tricks — just a phone cooking continuum chaos  Broke the barrier. Phones can now simulate real turbulence in real time.   Next: 256³? 320³? Who’s stopping us.  If this blows your mind, throw a star or a coffee → paypal.me/rhouse84
+320³ already in progress…   If this broke your brain, drop a star or fuel the chaos:   https://paypal.me/jessehouse  Chaos on a phone. 2025.
