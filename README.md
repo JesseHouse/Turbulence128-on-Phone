@@ -14,12 +14,11 @@ This is the code that achieved the impossible: a full 128³ forced isotropic tur
 - Built as a mobile-optimized spectral core accelerator.
 - Uses pseudospectral methods for Navier-Stokes equations.
 - Zero dependencies outside stock PyTorch/NumPy—runs in Termux on Android.
-- Full Jupyter notebook included: `turbulence_128_phone.ipynb` (run it yourself!).
 
 ## Setup & Run
 1. Install Termux on Android.
 2. Install Python, NumPy, PyTorch (via pip or pkg).
-3. Clone this repo: `git clone https://github.com/JesseHouse/Turbulence128-on-Phone.git`
+3. Clone this repo: 
 4. Open the .ipynb in Jupyter (or run via CLI).
 5. Hit play—watch 128³ turbulence unfold live on your phone.
 
