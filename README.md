@@ -2,7 +2,7 @@
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-v2.0-orange)](https://pytorch.org/) [![Python](https://img.shields.io/badge/Python-3.10-blue)](https://python.org/)
 
-Real-time 3D pseudospectral turbulence at **N=128³ (2M+ particles)** in **94 lines of pure Python**. Runs at **1.1 FPS** on a phone—because why not turn your Snapdragon into a supercomputer?
+Real-time 3D pseudospectral turbulence at **N=128³ (2.1M particles)** **N=256³ (16.8M particles)** **N=320³ (32.8M particles)** in less than **100 lines of pure Python**. Runs on a phone—because why not turn your Snapdragon into a supercomputer?
 
 ## What It Does
 - Solves Navier-Stokes via spectral methods (FFT-based).
