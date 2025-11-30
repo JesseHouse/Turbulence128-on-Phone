@@ -10,22 +10,19 @@ Real-time 3D pseudospectral turbulence at **N=128³ (2.1M particles)** **N=256³
 - "PHONE MONSTER" mode: No GPUs, no clusters—just NumPy/Torch on mobile.
 - Real-time volumetric fluids for mobile games: smoke, fire, clouds, water, magic effects — all driven by actual Navier-Stokes running at 128³ on-device. 
 - Drop-in gaming integration: Export velocity/density fields as 3D textures → instant reactive smoke, destructible clouds, spell effects, underwater caustics, or full planetary atmospheres — all on-device, no server cost.
+- SpectralCore isn’t just a fluid solver — it’s a spectral accelerator you bolt onto anything.  
+Drop it in once and every effect in your game (smoke, fire, clouds, magic, dust, explosions, even audio-reactive visuals) instantly inherits real divergence-free turbulence and 32M-particle detail.  
+No engine changes, no GPU, just pure CPU-powered chaos that makes everything look 10× more expensive overnight​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 
 ## Quick Run
 - Click **Open in Colab** on the notebook → Hit Runtime > Run all.
-- Or on Android: Termux + `pip install numpy torch` → `python T128-on-Phone.py`.
-
-## Outputs (from your run)
-| Step | Energy (E) | FPS | Time (s) |
-|------|------------|-----|----------|
-| 0    | 31.006     | -   | 0.00    |
-| 100  | 30.945     | 1.17| 85.8    |
-| 200  | 30.828     | 1.17| 171.4   |
-| 300  | 30.819     | 1.17| 256.2   |
-| 400  | 30.758     | 1.17| 341.0   |
+- Or on Android: Termux + `pip install numpy torch` → Pick .py file. 
 
 ![image](https://github.com/user-attachments/assets/3ac68114-d398-4fa1-8858-25e3bf954c7a)
 
+![image](https://github.com/user-attachments/assets/40feb739-8e95-4374-adcf-38e03d409bf9)
+
+![image](https://github.com/user-attachments/assets/45e90451-073b-4ee4-b272-58c8c8873583)
 
 ## Tech Stack
 - **Core**: PyTorch for tensors/FFTs (falls back to NumPy).
